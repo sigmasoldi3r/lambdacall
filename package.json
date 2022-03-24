@@ -1,0 +1,26 @@
+{
+  "name": "lambo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "prettier": "^2.6.0",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@octantis/option": "^1.2.0",
+    "commander": "^9.1.0",
+    "peggy": "^1.2.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-entry-point": "^1.0.2",
+    "typedi": "^0.10.0"
+  },
+  "scripts": {
+    "start:js": "ts-node src/Main.ts --target js",
+    "dev": "HOT_RELOAD=true ts-node-dev --respawn src/Main.ts",
+    "build": ""
+  }
+}

@@ -1,0 +1,11 @@
+(* Example of Lambda program *)
+
+PI := 3.141592653589793
+
+(* Area surface of a circle *)
+Surface := (\r.PI·r^2)
+
+(** NOTE **
+ * You MUST compile this module with the --permissive flag!
+ * Otherwise it will display a syntax error.
+ *********)

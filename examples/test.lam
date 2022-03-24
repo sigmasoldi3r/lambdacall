@@ -1,0 +1,17 @@
+(* Example of Lambda program *)
+
+PI := 3.141592653589793
+
+(* Area surface of a circle *)
+Surface := (λr.PI·r^2)
+
+SurfBound := [PI := 3](λr.PI·r^2)
+PartBound := [PI := 4]Surface
+
+(* Example of a circle of radius 1 *)
+r := 1
+main := (λargs.
+  (print
+    "Surface of " r " is " (Surface r)
+    ", the bad pi is:" (SurfBound r)
+    ", frink's pi is:" (PartBound r)))

@@ -1,0 +1,2 @@
+# Change override so it can highlight Lambdacall language files
+*.lam linguist-language=FSharp
